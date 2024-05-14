@@ -1,0 +1,30 @@
+<!-- about_sam.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}">
+    <meta charset="utf-8">
+    <title>About Samuel</title>
+</head>
+<body>
+    <h1>About me!</h1>
+    <p3>As is hopefully clear by now, my name is Samuel Garmoe. I am 27, live in Baltimore City, 
+        and my eventual UMGC degree will be the second from the University of Maryland System.
+    </p3>
+    <p3>I have lived in Maryland for my whole life except for one year, which was spent just over 
+        the border into southeastern Pennsylvania for the first year of college. Since then, I have 
+        been in Baltimore city.
+    </p3>
+
+<!-- links to rest of site and google-->
+<h2>Navigation</h2>
+<nav>
+    <ol>
+    <li><a href="{{ url_for('index') }}">Homepage</a></li>
+    <li><a href="{{ url_for ('show_opinions') }}">Samuel's Opinions!</a></li>
+    <li><a href="https://www.google.com/">Google</a></li>
+</ol>
+</nav>
+</body>
+</html>

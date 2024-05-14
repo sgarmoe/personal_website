@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Username to Reset Password</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+
+<body>
+<h1>Please input your username to reset your password.</h1>
+
+<form action="/verify_username" method="POST">
+
+    <label for="username">Username</label>
+    <input type="text" name="username">
+
+    <label for="old_pw">Current Password</label>
+    <input type="password" name="old_pw">
+
+
+    <label for="new_pw">New Password</label>
+    <input type="password" name="new_pw">
+
+    <label for="new_pw_verify">Verify New Password</label>
+    <input type="password" name="new_pw_verify">
+
+
+    <input type="submit" class="submit" value="Change Password">
+
+</form>
+</body>

@@ -1,0 +1,30 @@
+body {
+    background-color: #d6c7c2ce;
+    font-size: 100%;
+    color: black;
+}
+h1 {
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(19, 82, 45)
+}
+h2 {
+    font-size: 140%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(121, 3, 19)
+}
+h3 {
+    font-size: 170%;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(55, 0, 255); 
+}
+p1 {
+    font-family:'Times New Roman', Times, serif
+}
+
+p2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

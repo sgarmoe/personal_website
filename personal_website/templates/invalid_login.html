@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Login</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+
+<body>
+<h1>Invalid login info. Please submit correct login credentials.</h1>
+
+<form action="/invalid_login" method="POST">
+
+    <label for="username">Username</label>
+    <input type="text" name="username">
+
+    <label for="password">Password</label> 
+    <input type="password" name="password">
+
+    <input type="submit" class="submit" value="Login">
+
+    
+
+</form>
+
+<p1>Number of login attempts: {{ login_counter }} </p1>
+
+</body>
+
+</html>

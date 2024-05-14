@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Register</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+
+<body>
+<h1>Please Register a Username and Password </h1>
+
+<form action="/" method="POST">
+    <label for="username">Username</label> 
+    <input type="text" name="username">
+
+    <label for="password">Password</label> 
+    <input type="password" name="password">
+
+    <input type="submit" class="submit" value="Register">
+</form>
+
+</body>
+</html>

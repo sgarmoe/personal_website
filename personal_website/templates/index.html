@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Index Homepage</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+<body>
+    
+    
+<h1>Welcome to Samuel Garmoe's first website!</h1>
+
+<p1>There is not much yet, but that will change with time! For now, please check 
+    the below links for navigation within the site, and for exiting to Google.
+</p1>
+
+<!-- show date and time on homepage-->
+<h3>Current Date and Time: </h3> 
+<p1>{{ current_time }}</p1>
+
+<!-- links to rest of site and google-->
+<h2>Navigation</h2>
+<nav> 
+<ol>
+    <li><a href="{{ url_for ('show_opinions') }}">Samuel's Opinions!</a></li>
+    <li><a href="{{ url_for ('show_about') }}">About Sam</a></li>
+    <li><a href="https://www.google.com/">Google</a></li>
+</ol>
+</nav>
+
+<a href="{{ url_for ('verify_username') }}">
+    <button>Reset Password</button> <!-- take user to reset password process-->
+</a>
+</body>
+</html>

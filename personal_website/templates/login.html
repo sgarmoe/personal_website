@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Login</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+
+<body>
+<h1>Please Input Your Username and Password</h1>
+
+<form action="/login" method="POST">
+
+    <h1>Registration successful.</h1>
+    <label for="username">Username</label>
+    <input type="text" name="username">
+
+    <label for="password">Password</label> 
+    <input type="password" name="password">
+
+    <input type="submit" class="submit" value="Login">
+
+
+</form>
+</body>
+</html>

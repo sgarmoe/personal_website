@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Password for Registered User</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}"> <!-- style sheet url in static folder-->
+</head>
+
+<body>
+<h1>Please input your original password and your new password twice to change it.</h1>
+
+<form action="/reset_pw" method="POST">
+
+    <label for="old_pw">Current Password</label>
+    <input type="password" name="old_pw">
+
+
+    <label for="new_pw">New Password</label>
+    <input type="password" name="new_pw">
+
+    <label for="new_pw_verify">Verify New Password</label>
+    <input type="password" name="new_pw_verify">
+
+    <input type="submit" class="submit" value="Change Password">
+
+</form>
+</body>

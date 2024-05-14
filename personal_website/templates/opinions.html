@@ -1,0 +1,37 @@
+<!-- opinions.html-->
+<!-- page with links to written content on various things(links do not exist yet)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css') }}">
+    <meta charset="utf-8">
+    <title>Samuel's Opinions</title>
+</head>
+<body>
+
+<h1>My Thoughts on Some of Everything</h1>
+<p2>This page is dedicated to my thoughts on a variety of interests. Given that the site is brand new, 
+    references to each topic do not yet have an attached post. In time, each topic will be written about. 
+    The below topics are presented in no particular order of importance.
+</p>
+
+<!--No content yet; add in future-->
+<h3>Samuel's (Future) Writings</h3>
+<ul>
+    <li>Climate Change, Sustainibility, and Zero-Waste Lifestyles</li>
+    <li>State of Major League Baseball</li>
+    <li>Advocating for a Less Car-Centric Culture</li>
+    <li>Musings on Learning to Code </li>
+</ul>
+
+<!-- links to rest of site and google-->
+<h2>Navigation</h2>
+<nav>
+<ol>
+    <li><a href="{{ url_for ('show_about') }}">About Samuel!</a></li>
+    <li><a href="{{ url_for ('index') }}">Homepage</a></li>
+    <li><a href="https://www.google.com/">Google</a></li>
+</ol> 
+</nav>
+</body>
+</html>
